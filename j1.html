@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // hw J1
+        // 1. Площадь
+        const radius = prompt("Please, enter the radius of the circle!", "");
+        alert(`The area of a circle is ${Math.PI * radius ** 2}!`);
+        // 2. Сколько прошло
+        const uYear = prompt("Enter year: ");
+        const year = 2022;
+        alert(`${year-uYear} years have passed since then.`)
+        // 3. Пенсия
+        const userAge = +prompt("Enter your age: ");
+        const retAge = 65;
+        const resAge = retAge - userAge;
+        alert(`There are ${resAge} years left before the pension, the pension will be accrued in ${year+resAge}.`)
+    </script>
+</body>
+</html>
