@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J2 - homework</title>
+</head>
+<body>
+    <script>
+        // 1. Объём
+        /* const cylHeight = +prompt("Enter cylinder height: ");
+        const cylDiameter = +prompt("Enter cylinder diameter: ");
+        const cylVolume = Math.PI * ((cylDiameter/2)**2) * cylHeight;
+        console.log(`Cylinder volume: ${cylVolume} cbm.`); */
+        // 2. Средняя прибыль
+        /* const profitFirstMonth = +prompt("Enter you profit for the first month of the quarter: ");
+        const profitSecondMonth = +prompt("Enter you profit for the second month of the quarter: ");
+        const profitThirdMonth = +prompt("Enter you profit for the third month of the quarter: ");
+        const averageProfit = Math.round((profitFirstMonth + profitSecondMonth + profitThirdMonth) / 3);
+        console.log(`Average profit per quarter: ${averageProfit}.`); */
+        // 3. Аббревиатура
+        /* function makeAbbreviation(){
+            const userName = prompt("Enter your name: ");
+            const userSurname = prompt("Enter your surname: ");
+            const userMiddlename = prompt("Enter your middle name: ");
+            const userAbbreviation = userName[0] + userSurname[0] + userMiddlename[0];
+            console.log(`Abbreviation for your name - ${userName} - , surname - ${userSurname} - and middle name - ${userMiddlename}: ${userAbbreviation}.`);
+        }
+        makeAbbreviation(); */
+        // 4. Приветствие
+        /* const helloName = prompt("Welcome! Enter your name: ");
+        console.log(`Hello, ${helloName} =)`); */
+        // 5. Периметр квадрата
+        /*const sideLength = +prompt("Enter the length side of the square: ");
+        const squarePerimeter = 4 * sideLength;
+        console.log(`Square side length: ${sideLength}. Perimeter of the square is ${squarePerimeter}.`); */
+        // 6. Скорость
+        /* const cityDistance = +prompt(`Enter the distance in km between the two cities: `);
+        const userTime = +prompt(`Enter desired time in hours to get there: `);
+        const velocity = Math.round(cityDistance / userTime);
+        console.log(`The speed at which you need to move in order to be on time is ${velocity} km per hour.`); */
+        // 7. Наоборот
+        let userNum = +prompt("Please, enter three-digit number!", "");
+        let resNum = 0;
+        if (Number.isInteger(userNum) && userNum > 99 && userNum < 1000){ 
+        while (userNum > 0){
+            // находим остаток - последнюю цифру
+            digit = userNum % 10;
+            // делим нацело - удаляем последнюю цифру
+            userNum = Math.floor(userNum / 10);
+            // увеличиваем разрядность второго числа
+            resNum = resNum * 10;
+            // добавляем очередную цифру
+            resNum = resNum + digit;
+            /* resNum = resNum * 10 + userNum % 10;
+            userNum = Math.floor(userNum / 10); */
+        }
+        console.log(`Number backwards is ${resNum}.`);
+        } else{
+            console.log(`It isn't a three-digit number!`);
+        }
+    </script>
+</body>
+</html>
