@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J3</title>
+  </head>
+  <body>
+    <script>
+      // 1. Счастливый билет
+      /* let userNum = +prompt("Please, enter your six-digit number of ticket: ");
+
+      if (userNum > 0) {
+        let first = Math.floor(userNum / 1000);
+        let second = userNum % 1000;
+        let firstSum = (first % 10) + (Math.floor(first / 10) % 10) + Math.floor(first / 100);
+        let secondSum = (second % 10) + (Math.floor(second / 10) % 10) + Math.floor(second / 100);
+        let msg = firstSum === secondSum ? "Lucky ticket" : "Not lucky ticket";
+        alert(`${msg}`);
+      } else {
+        alert(`Invalid value.`);
+      } */
+    //   2. Секретный вагон
+    /* ticketNumber = +prompt("Ticket number: ")
+    if ((ticketNumber >= 1 && ticketNumber <= 4) || (ticketNumber >= 53 && ticketNumber <= 54)) {
+        console.log("Номер вагона: 1")
+        if (ticketNumber >= 1 && ticketNumber <= 4) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 53 && ticketNumber <= 54){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 5 && ticketNumber <= 8) || (ticketNumber >= 51 && ticketNumber <= 52)) {
+        console.log("Номер вагона: 2")
+        if (ticketNumber >= 5 && ticketNumber <= 8) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 51 && ticketNumber <= 52){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 9 && ticketNumber <= 12) || (ticketNumber >= 49 && ticketNumber <= 50)) {
+        console.log("Номер вагона: 3")
+        if (ticketNumber >= 9 && ticketNumber <= 12) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 49 && ticketNumber <= 50){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 13 && ticketNumber <= 16) || (ticketNumber >= 47 && ticketNumber <= 48)) {
+        console.log("Номер вагона: 4")
+        if (ticketNumber >= 13 && ticketNumber <= 16) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 47 && ticketNumber <= 48){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 17 && ticketNumber <= 20) || (ticketNumber >= 45 && ticketNumber <= 46)) {
+        console.log("Номер вагона: 5")
+        if (ticketNumber >= 17 && ticketNumber <= 20) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 45 && ticketNumber <= 46){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 21 && ticketNumber <= 24) || (ticketNumber >= 43 && ticketNumber <= 44)) {
+        console.log("Номер вагона: 6")
+        if (ticketNumber >= 21 && ticketNumber <= 24) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 43 && ticketNumber <= 44){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 25 && ticketNumber <= 28) || (ticketNumber >= 41 && ticketNumber <= 42)) {
+        console.log("Номер вагона: 7")
+        if (ticketNumber >= 25 && ticketNumber <= 28) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 41 && ticketNumber <= 42){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 29 && ticketNumber <= 32) || (ticketNumber >= 39 && ticketNumber <= 40)) {
+        console.log("Номер вагона: 8")
+        if (ticketNumber >= 29 && ticketNumber <= 32) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 39 && ticketNumber <= 40){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } else if ((ticketNumber >= 33 && ticketNumber <= 36) || (ticketNumber >= 37 && ticketNumber <= 38)) {
+        console.log("Номер вагона: 9")
+        if (ticketNumber >= 33 && ticketNumber <= 36) {
+            console.log("Тип места:\n - не боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        } else if (ticketNumber >= 37 && ticketNumber <= 38){
+            console.log("Тип места:\n - боковое");
+            ticketNumber % 2 == 0 ? console.log(" - верхнее") : console.log(" - нижнее")
+        }
+    } */
+    // 3. Температурный помощник
+    celsius = Number(prompt("Градусы в Цельсиях: ", 10))
+    if (!isNaN(celsius)) {
+        fahrenheit = celsius * 1.8 + 32;
+        console.log(`Градусы в Цельсиях: ${celsius}, градусы в Фаренгейтах: ${fahrenheit}.`)
+    } else if (isNaN(celsius)) {
+        console.log("Ошибка! Необходимо ввести число.")
+    }
+
+    </script>
+  </body>
+</html>
